@@ -61,7 +61,7 @@ services:
     image: nginx:alpine
     container_name: nginx
     ports:
-      - "80:80"
+      - "85:80"
     networks:
       - data_pipeline
     volumes:
