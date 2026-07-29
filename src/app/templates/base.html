@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        {% block title %}Файлы{% endblock %}
+    </title>
+    <link
+            rel="icon"
+            href="/static/favicon.ico"
+    >
+
+    <link
+            rel="stylesheet"
+            href="/static/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <nav class="navbar">
+
+        <a href="/files">
+            📁 Файлы
+        </a>
+
+
+        <a href="/download">
+            ⬇️ Загрузка
+        </a>
+
+    </nav>
+
+
+    <main>
+
+        {% block content %}
+
+        {% endblock %}
+
+    </main>
+
+
+</div>
+
+
+</body>
+
+</html>
