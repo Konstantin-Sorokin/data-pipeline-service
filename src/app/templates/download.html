@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Загрузка файлов
+{% endblock %}
+
+
+{% block content %}
+
+<div class="download-page">
+
+    <h1>
+        Загрузка файлов
+    </h1>
+
+
+    <div class="download-card">
+
+
+        <div id="download-content">
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+
+    const initialStatus = {{ status | tojson }};
+    const hasFiles = {{ has_files | tojson }};
+
+</script>
+
+
+<script src="/static/js/download.js"></script>
+
+
+{% endblock %}
